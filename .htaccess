@@ -12,7 +12,43 @@ RewriteRule ^ https://sweetsteviam.com%{REQUEST_URI} [L,R=301]
 
 
 
-# Obsługa URL bez rozszerzenia .html (bez przekierowania)
+# Przekierowanie 301 z .html na wersję bez .html
+# Używa %{THE_REQUEST} żeby sprawdzić oryginalne żądanie HTTP (zapobiega pętli)
+# Działa tylko gdy użytkownik wszedł bezpośrednio na URL z .html w przeglądarce
+
+RewriteCond %{THE_REQUEST} \s/+([^\s]*?)\.html[\s?] [NC]
+
+RewriteCond %{REQUEST_FILENAME} -f
+
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+
+
+# Przekierowania dla starych URL (404 -> nowe URL)
+
+RewriteRule ^stevia-tabs$ /products/stevia-tabs [R=301,L]
+
+RewriteRule ^stevia-tabs\.html$ /products/stevia-tabs [R=301,L]
+
+RewriteRule ^products-stevia-rebaudiana-bertoni-e960$ /products/stevia-rebaudiana-bertoni [R=301,L]
+
+RewriteRule ^products-stevia-rebaudiana-bertoni-e960\.html$ /products/stevia-rebaudiana-bertoni [R=301,L]
+
+RewriteRule ^pl/produkty-products-stevia-rebaudiana-bertoni-e960$ /pl/produkty/stevia-rebaudiana-bertoni [R=301,L]
+
+RewriteRule ^pl/slodziki-hurtowe\.html$ /pl/naturalne-slodziki-hurtownia [R=301,L]
+
+RewriteRule ^pl/produkty/erytrol$ /pl/produkty/erytrytol [R=301,L]
+
+RewriteRule ^pl/produkty/erytrol\.html$ /pl/produkty/erytrytol [R=301,L]
+
+RewriteRule ^pl/tabletki-stewii\.html$ /pl/produkty/tabletki-stewii [R=301,L]
+
+RewriteRule ^pl/tabletki-stewii$ /pl/produkty/tabletki-stewii [R=301,L]
+
+
+
+# Obsługa URL bez rozszerzenia .html (wewnętrzne przepisanie, bez przekierowania)
 
 RewriteCond %{REQUEST_FILENAME} !-f
 

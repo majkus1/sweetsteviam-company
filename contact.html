@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="en">
 
 <head>
 
@@ -26,10 +26,12 @@
   <meta property="og:url" content="https://sweetsteviam.com/contact" />
   <meta property="og:type" content="website" />
 
+  <link rel="canonical" href="https://sweetsteviam.com/contact" />
+
   <link rel="alternate" hreflang="en" href="https://sweetsteviam.com/contact" />
   <link rel="alternate" hreflang="pl" href="https://sweetsteviam.com/pl/kontakt" />
 
-  <link rel="stylesheet" href="/styles3.css?v=2">
+  <link rel="stylesheet" href="/styles7.css?v=2">
 
   <link rel="stylesheet" href="/footer.css" />
 
@@ -145,7 +147,7 @@
 
       <div class="contact-content">
 
-        <form action="wyslij.php" method="post">
+        <form action="/wyslij.php" method="post">
 
           <!-- Anti-spam: Hidden honeypot field -->
           <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
@@ -434,7 +436,7 @@
 
           type: 'POST',
 
-          url: 'wyslij.php',
+          url: '/wyslij.php',
 
           data: formData,
 

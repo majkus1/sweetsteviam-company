@@ -1,74 +1,99 @@
-/* open-sans-300 - latin */
+/* open-sans-300 - latin_latin-ext */
 @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 300;
-	src: url('../fonts/open-sans-v40-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-regular - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-300italic - latin_latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url('../fonts/open-sans-v44-latin_latin-ext-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-regular - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-500 - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-italic - latin_latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/open-sans-v44-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-500 - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 500;
-	src: url('../fonts/open-sans-v40-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-500italic - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-500italic - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: italic;
 	font-weight: 500;
-	src: url('../fonts/open-sans-v40-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-600 - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-600 - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
-	src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-600italic - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-600italic - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: italic;
 	font-weight: 600;
-	src: url('../fonts/open-sans-v40-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-700 - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-700 - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 700;
-	src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* open-sans-700italic - latin */
-@font-face {
+	src: url('../fonts/open-sans-v44-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-700italic - latin_latin-ext */
+  @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'Open Sans';
 	font-style: italic;
 	font-weight: 700;
-	src: url('../fonts/open-sans-v40-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+	src: url('../fonts/open-sans-v44-latin_latin-ext-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-800 - latin_latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/open-sans-v44-latin_latin-ext-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-800italic - latin_latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: url('../fonts/open-sans-v44-latin_latin-ext-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 *,
 *::before,
@@ -193,15 +218,15 @@ main .desktop-main-bgc,
 main .mobile-main-bgc {
 	width: 100%;
 	padding-top: 99px;
-	height: calc(100vh - 99px);
+	height: 100svh;
 }
 main .desktop-main-bgc {
 	display: none;
 }
 main .text-welcome {
 	position: absolute;
-	top: 40%;
-	transform: translate(0, -40%);
+	top: 50%;
+	transform: translate(0, -50%);
 	color: #fff;
 	margin-left: 10px;
 }
@@ -587,7 +612,6 @@ main .text-welcome a {
 	max-width: 500px;
 }
 footer {
-	position: absolute;
 	background-color: #9f5858;
 	height: 100px;
 	width: 100%;
@@ -784,13 +808,13 @@ footer .footer-container-two .company-footer {
 	}
 }
 @media (min-width: 970px) {
-	main .desktop-main-bgc {
+	/* main .desktop-main-bgc {
 		display: block;
 		height: calc(100vh - 118px);
 	}
 	main .mobile-main-bgc {
 		display: none;
-	}
+	} */
 	.navbar {
 		justify-content: start;
 	}
@@ -850,10 +874,10 @@ footer .footer-container-two .company-footer {
 		width: 90px;
 	}
 	main .text-welcome h1 {
-		font-size: 60px;
+		font-size: 40px;
 	}
 	main .text-welcome h2 {
-		font-size: 60px;
+		font-size: 40px;
 	}
 	#block-us .block-content {
 		flex-direction: row;
@@ -1017,6 +1041,15 @@ footer .footer-container-two .company-footer {
 		padding-left: 15px;
 	}
 }
+@media (min-width: 1025px) {
+	main .desktop-main-bgc {
+		display: block;
+		height: calc(100vh - 118px);
+	}
+	main .mobile-main-bgc {
+		display: none;
+	}
+}
 @media (min-width: 1124px) {
 	footer {
 		padding-left: 80px;
@@ -1141,4 +1174,37 @@ picture img {
 	width: 100%;
 	height: auto;
 	margin-top: 95px;
+}
+
+@media (max-width: 970px) {
+	.second-blog-box {
+		margin-top: 30px;
+	}
+}
+
+.home-content-seo {
+	margin: 30px auto;
+}
+
+/* .seo-box-content {
+	padding: 15px;
+} */
+
+@media (min-width: 1024px) {
+	.home-content-seo {
+		margin: 30px auto;
+	}
+	.seo-box-content {
+		padding-top: 0px;
+	}
+}
+
+@media (min-width: 1900px) {
+	main .desktop-main-bgc {
+      height: 100%;
+	  max-height: 900px;
+} 
+main .text-welcome {
+	top: 450px;
+}
 }

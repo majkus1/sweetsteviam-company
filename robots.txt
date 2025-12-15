@@ -2,5 +2,7 @@ User-agent: *
 
 Allow: /
 
+Disallow: /wyslij.php
+
 Sitemap: https://sweetsteviam.com/sitemap.xml
 

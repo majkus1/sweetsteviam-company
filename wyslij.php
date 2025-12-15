@@ -1,5 +1,11 @@
 <?php
 
+// Set content type first
+header('Content-Type: text/html; charset=UTF-8');
+
+// Prevent indexing of this file
+header('X-Robots-Tag: noindex, nofollow');
+
 // Anti-spam: Check honeypot field
 if (!empty($_POST['website'])) {
     die('Spam detected.');
@@ -19,11 +25,11 @@ if ($timeDiff > 3600) {
     die('Form expired. Please refresh the page and try again.');
 }
 
-$nameL = trim($_POST['nameL'] ?? 'Anonim');
-$company = trim($_POST['company'] ?? '');
-$email = trim($_POST['email'] ?? '');
-$tel = trim($_POST['tel'] ?? '');
-$message = trim($_POST['message'] ?? '');
+$nameL = trim(isset($_POST['nameL']) ? $_POST['nameL'] : 'Anonim');
+$company = trim(isset($_POST['company']) ? $_POST['company'] : '');
+$email = trim(isset($_POST['email']) ? $_POST['email'] : '');
+$tel = trim(isset($_POST['tel']) ? $_POST['tel'] : '');
+$message = trim(isset($_POST['message']) ? $_POST['message'] : '');
 
 $errors = [];
 
@@ -40,6 +46,7 @@ if (empty($message) || strlen($message) < 10) {
 }
 
 if (!empty($errors)) {
+    http_response_code(400);
     echo join('<br>', $errors);
     exit;
 }
@@ -83,11 +90,18 @@ $headers[] = "From: $from";
 $headers[] = "Reply-To: $email";
 $headers[] = "X-Mailer: PHP/" . phpversion();
 
-$mailSent = mail($to, $subject, $htmlBody, implode("\r\n", $headers));
-
-if ($mailSent) {
-    echo 'Wiadomość została wysłana.';
-} else {
-    echo 'Wiadomość nie mogła zostać wysłana. Spróbuj ponownie później.';
+try {
+    $mailSent = @mail($to, $subject, $htmlBody, implode("\r\n", $headers));
+    
+    if ($mailSent) {
+        http_response_code(200);
+        echo 'Wiadomość została wysłana.';
+    } else {
+        http_response_code(500);
+        echo 'Wiadomość nie mogła zostać wysłana. Spróbuj ponownie później.';
+    }
+} catch (Exception $e) {
+    http_response_code(500);
+    echo 'Wystąpił błąd podczas wysyłania wiadomości.';
 }
 ?>
